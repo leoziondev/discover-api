@@ -11,6 +11,10 @@ Learn more about:
 * API frontend with fetch
 * API frontend with axios
 
+### How to use this project
+* `clone` this project, enter the folder and run `npm install`
+* start server with `node .` or `node index.js`  
+
 ### Installations used in this project
 
 Express
