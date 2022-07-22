@@ -2,12 +2,11 @@ const express = require('express')
 
 const app = express()
 
-app.route('/').get((req, res) => {
-  res.send("Home Page")
-})
+// middleware
+app.use(express.json())
 
-app.route('/about').get((req, res) => {
-  res.send("About Page")
+app.route('/').post((req, res) => {
+  res.send(req.body)
 })
 
 app.listen('3000')
