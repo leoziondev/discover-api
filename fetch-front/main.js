@@ -1,4 +1,4 @@
-const url = 'http://localhost:5500/api'
+const url = 'http://localhost:3000/api'
 
 function getUsers() {
   fetch(url)
@@ -8,7 +8,7 @@ function getUsers() {
 }
 
 function getUser() {
-  fetch(`${url}/1`)
+  fetch(`${url}/2`)
     .then(response => response.json())
     .then(data => {
       userName.textContent = data.name
@@ -18,7 +18,26 @@ function getUser() {
     .catch(error => console.error(error))
 }
 
+function addUser(newUser) {
+  fetch(url, {
+    method: "POST",
+    body: JSON.stringify(newUser),
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8"
+    }
+  })
+    .then(response => response.json())
+    .then(data => alertApi.textContent = data)
+    .catch(error => console.error(error))
+}
 
+const newUser = {
+  name: "Jane Doe",
+  avatar: "https://picsum.photos/400/200",
+  city: "New Jersey"
+}
+
+addUser(newUser)
 
 getUsers()
 getUser()
