@@ -15,7 +15,9 @@ Learn more about:
 
 ### How to use this project
 * `clone` this project, enter the folder and run `npm install`
-* start server with `npm start`  
+* start server with `npm start`
+* port api `http://localhost:3000/api`
+* start index.html with LiveServer intro folders `fetch-front` or `axios-front`  
 
 ### Installations used in this project
 
