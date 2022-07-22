@@ -10,3 +10,10 @@ Learn more about:
 * Consuming API with NodeJS
 * API frontend with fetch
 * API frontend with axios
+
+### Installations used in this project
+
+Express
+```
+npm i express
+```
