@@ -15,7 +15,7 @@ Learn more about:
 
 ### How to use this project
 * `clone` this project, enter the folder and run `npm install`
-* start server with `node .` or `node index.js`  
+* start server with `npm start`  
 
 ### Installations used in this project
 
@@ -26,4 +26,12 @@ npm i express
 Axios
 ```
 npm i axios
+```
+Cors
+```
+npm i cors
+```
+Nodemon
+```
+npm i nodemon -D
 ```
