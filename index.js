@@ -2,8 +2,10 @@ const express = require('express')
 
 const app = express()
 
-app.route('/:id').delete((req, res) => {
-  res.send(req.params.id)
+app.route('/').get((req, res) => {
+  // localhost:3000?name=Jhon Doe
+  res.send(req.query)
+  // res.send(req.query.name)
 })
 
 app.listen('3000')
