@@ -5,6 +5,8 @@ Learn more about:
 * NodeJS
 * Express
 * Create server
+* Routes GET|POST|PUT|DELETE
+* Insomnia
 * Backend API's 
 * Parameters in requests
 * Consuming API with NodeJS
